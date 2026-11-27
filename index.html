@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SE 234 Lab 2: distributed version control and Markdown reference">
+  <title>SE 234 · Distributed Version Control Lab</title>
+  <style>
+    :root { color-scheme: light; --ink:#17212b; --muted:#596879; --paper:#f4f7fb; --card:#fff; --accent:#6048d8; --line:#dce4ee; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header { padding:4rem 1.25rem 3rem; color:white; background:linear-gradient(130deg,#27245d,#6048d8 58%,#a54fd0); }
+    .wrap { width:min(920px,100% - 2rem); margin:auto; }
+    .eyebrow { margin:0 0 .6rem; letter-spacing:.12em; text-transform:uppercase; font-size:.8rem; font-weight:700; opacity:.85; }
+    h1 { margin:0; font-size:clamp(2rem,6vw,3.6rem); line-height:1.12; }
+    header p:last-child { max-width:650px; margin:1rem 0 0; color:#eceaff; }
+    main { padding:2rem 0 4rem; }
+    section { margin:1rem 0; padding:1.5rem; background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 24px #23324a0a; }
+    h2 { margin:.1rem 0 .7rem; font-size:1.4rem; }
+    h3 { margin:1.3rem 0 .4rem; font-size:1.05rem; }
+    p { margin:.45rem 0; }
+    .name { color:var(--accent); font-weight:700; }
+    code, pre { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
+    code { padding:.12em .35em; border-radius:5px; background:#f0eefb; }
+    pre { overflow:auto; padding:1rem; border:1px solid var(--line); border-radius:10px; background:#f7f8fc; }
+    table { width:100%; border-collapse:collapse; }
+    th,td { padding:.5rem .65rem; text-align:left; border-bottom:1px solid var(--line); }
+    th { background:#f7f8fc; }
+    a { color:var(--accent); }
+    footer { padding:1rem; text-align:center; color:var(--muted); }
+    :focus-visible { outline:3px solid #f0b429; outline-offset:3px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Chiang Mai University · SE 234</p>
+      <h1>Distributed Version Control</h1>
+      <p>Lab 2 — Git, GitHub, Fork, and a compact Markdown reference.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section aria-labelledby="about">
+      <h2 id="about">About this lab</h2>
+      <p>This project practices creating a remote repository, connecting it to a local repository with Fork, tracking changes, and publishing a simple project page.</p>
+      <p>Student: <span class="name">Add your name here</span></p>
+    </section>
+    <section aria-labelledby="workflow">
+      <h2 id="workflow">Git workflow</h2>
+      <pre><code>git status
+git add .
+git commit -m "Add lab project"
+git push -u origin main</code></pre>
+      <p>Check the working tree before committing, review the staged changes, then push the commit to the configured remote.</p>
+    </section>
+    <section aria-labelledby="markdown">
+      <h2 id="markdown">Markdown cheatsheet</h2>
+      <h3>Headings and emphasis</h3>
+      <pre><code># Heading 1
+## Heading 2
+### Heading 3
+*italic*  **bold**  ~~strikethrough~~</code></pre>
+      <h3>Lists and tasks</h3>
+      <pre><code>- First item
+  - Nested item
+1. Numbered item
+- [ ] To do
+- [x] Complete</code></pre>
+      <h3>Links and code</h3>
+      <pre><code>[GitHub](https://github.com)
+
+```js
+console.log("Hello, Git!");
+```</code></pre>
+      <h3>Keyboard symbols</h3>
+      <table>
+        <thead><tr><th scope="col">Key</th><th scope="col">Symbol</th></tr></thead>
+        <tbody><tr><td>Option</td><td>⌥</td></tr><tr><td>Control</td><td>⌃</td></tr><tr><td>Command</td><td>⌘</td></tr><tr><td>Shift</td><td>⇧</td></tr><tr><td>Return</td><td>↩</td></tr><tr><td>Arrow keys</td><td>↑ ↓ ← →</td></tr></tbody>
+      </table>
+      <p>Emoji examples: :+1: 👍 · :tada: 🎉 · :smile: 😄</p>
+    </section>
+    <section aria-labelledby="ignore">
+      <h2 id="ignore">Ignore-file example</h2>
+      <p>The lab exercise excludes <code>x.txt</code> and the <code>temp/</code> directory from version control:</p>
+      <pre><code>x.txt
+temp/</code></pre>
+    </section>
+    <section aria-labelledby="links">
+      <h2 id="links">Project links</h2>
+      <ul>
+        <li><a href="https://github.com">GitHub</a></li>
+        <li><a href="https://git-fork.com/">Fork client</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer><div class="wrap">SE 234 · Basic Development and Operations</div></footer>
+</body>
+</html>
